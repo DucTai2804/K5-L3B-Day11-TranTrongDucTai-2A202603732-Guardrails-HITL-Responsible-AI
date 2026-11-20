@@ -99,6 +99,8 @@ async def part4_attacks():
         red_default, red_default_runner, target_name="red_default"
     )
 
+    await asyncio.sleep(3.0)
+
     print("\n--- Attacks on Red Advance (bonus B2 tối đa +10 nếu LEAKED; chọn 1) ---")
     red_advance, red_advance_runner = create_red_agent_advance()
     guards_results = await run_attacks(
